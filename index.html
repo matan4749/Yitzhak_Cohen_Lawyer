@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#ffffff">
+<title>עו"ד יצחק (איציק) כהן</title>
+<link rel="icon" type="image/png" href="https://d-cards.co.il/wp-content/uploads/2023/09/cohen.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fc;
+  --white:#fff;
+  --navy:#0f1b35;
+  --navy2:#1a2a4a;
+  --blue:#1a6bcc;
+  --blue2:#2278e4;
+  --blue-pale:#e8f1fc;
+  --blue-glow:rgba(26,107,204,.18);
+  --gold:#b8802a;
+  --gold-pale:#fdf3e0;
+  --mid:#5a6880;
+  --soft:#8896ae;
+  --line:#e4e9f2;
+  --card-shadow:0 1px 3px rgba(15,27,53,.06),0 8px 24px rgba(15,27,53,.08);
+  --card-shadow-hover:0 4px 6px rgba(15,27,53,.08),0 16px 40px rgba(26,107,204,.14);
+  --wa:#25d366;
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  background:var(--bg);
+  color:var(--navy);
+  font-family:'Heebo',sans-serif;
+  max-width:430px;
+  margin:0 auto;
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* ─── ANIMATED GRADIENT BACKGROUND ─── */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(ellipse 500px 350px at 15% 5%,rgba(26,107,204,.07) 0%,transparent 65%),
+    radial-gradient(ellipse 350px 250px at 85% 55%,rgba(26,107,204,.05) 0%,transparent 65%),
+    radial-gradient(ellipse 250px 180px at 50% 100%,rgba(184,128,42,.05) 0%,transparent 60%);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ─── HERO ─── */
+.hero{position:relative;z-index:1;}
+.hero-cover{
+  width:100%;height:240px;position:relative;overflow:hidden;
+}
+.hero-cover-img{
+  width:100%;height:100%;object-fit:cover;object-position:center 20%;
+  display:block;filter:brightness(.82) saturate(1.15);
+}
+.hero-cover-grad{
+  position:absolute;bottom:0;left:0;right:0;height:70%;
+  background:linear-gradient(to top,var(--bg) 15%,transparent 100%);
+}
+/* floating glow dots */
+.hero-cover::before{
+  content:'';
+  position:absolute;top:20px;left:20px;
+  width:80px;height:80px;border-radius:50%;
+  background:radial-gradient(circle,rgba(26,107,204,.3),transparent 70%);
+  filter:blur(20px);animation:floatDot 4s ease-in-out infinite;
+}
+.hero-cover::after{
+  content:'';
+  position:absolute;bottom:30px;right:30px;
+  width:60px;height:60px;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,128,42,.3),transparent 70%);
+  filter:blur(16px);animation:floatDot 5s ease-in-out infinite reverse;
+}
+@keyframes floatDot{
+  0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}
+}
+
+.hero-body{
+  position:relative;padding:0 20px 24px;text-align:center;
+}
+
+/* rotating avatar ring — matan.life style */
+/* glow pulse around the whole thing */
+/* spinning gradient border */
+
+/* white gap between ring and photo */
+
+}
+/* static white border behind image */
+/* status pill */
+.status-pill{
+  display:inline-flex;align-items:center;gap:5px;
+  background:linear-gradient(135deg,#e8f8f0,#d4f5e5);
+  border:1px solid rgba(37,211,102,.3);
+  border-radius:20px;padding:4px 12px;
+  font-size:10px;font-weight:700;color:#0e7a3a;
+  letter-spacing:.5px;margin-bottom:10px;
+}
+.status-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:#25d366;
+  animation:pulse2 2s ease-in-out infinite;
+  box-shadow:0 0 0 0 rgba(37,211,102,.4);
+}
+@keyframes pulse2{
+  0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4);}
+  50%{box-shadow:0 0 0 5px rgba(37,211,102,0);}
+}
+
+.hero-name{
+  font-size:27px;font-weight:900;color:var(--navy);
+  letter-spacing:-.4px;line-height:1.15;margin-bottom:4px;
+  animation:fadeUp .5s .1s both;
+}
+.hero-role{
+  font-size:12px;color:var(--blue);font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:6px;animation:fadeUp .5s .2s both;
+}
+.hero-motto{
+  font-size:14px;color:var(--mid);font-weight:400;
+  font-style:italic;margin-bottom:18px;
+  animation:fadeUp .5s .3s both;
+}
+.hero-tags{
+  display:flex;justify-content:center;gap:7px;flex-wrap:wrap;
+  animation:fadeUp .5s .4s both;
+}
+.tag{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:20px;padding:5px 12px;
+  font-size:11px;font-weight:600;color:var(--mid);
+  box-shadow:0 1px 4px rgba(15,27,53,.06);
+  display:flex;align-items:center;gap:5px;
+}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── QUICK ACTIONS ─── */
+.qa-wrap{
+  padding:6px 14px 6px;
+  position:relative;z-index:1;
+  animation:fadeUp .5s .5s both;
+}
+.qa-card{
+  background:var(--white);
+  border-radius:var(--r);
+  box-shadow:var(--card-shadow);
+  border:1px solid var(--line);
+  padding:14px 10px 10px;
+}
+.qa-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:4px;
+}
+.qa-sep{height:1px;background:var(--line);margin:10px 0;}
+.qa-btn{
+  display:flex;flex-direction:column;align-items:center;gap:5px;
+  padding:3px 0;cursor:pointer;
+  border:none;background:none;
+  font-family:'Heebo',sans-serif;
+  -webkit-tap-highlight-color:transparent;
+  text-decoration:none;color:inherit;
+  transition:transform .15s;
+}
+.qa-btn:active{transform:scale(.88);}
+.qa-ico{
+  width:48px;height:48px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  transition:box-shadow .2s,transform .2s;
+}
+.qa-btn:hover .qa-ico{
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,.1);
+}
+.qa-ico svg{width:26px;height:26px;display:block;}
+.qa-ico img{width:26px;height:26px;object-fit:contain;display:block;}
+.qa-lbl{font-size:9px;color:var(--soft);font-weight:600;letter-spacing:.2px;white-space:nowrap;}
+
+/* icon backgrounds */
+.ic-wa{background:#e5f9ed;} .ic-sms{background:#fff3e0;} .ic-mob{background:#ede7f6;}
+.ic-off{background:#fce4ec;} .ic-mail{background:#fff8e1;} .ic-wz{background:#e0f7fa;}
+.ic-fb{background:#e3f2fd;} .ic-sh{background:#e8f5e9;} .ic-vc{background:#f5f5f5;}
+.ic-gm{background:#e8f5e9;} .ic-mi{background:#e8eaf6;}
+
+/* ─── SECTIONS ─── */
+.sec{
+  margin:8px 14px;
+  background:var(--white);
+  border-radius:var(--r);
+  border:1px solid var(--line);
+  box-shadow:var(--card-shadow);
+  overflow:hidden;
+  position:relative;z-index:1;
+  opacity:0;transform:translateY(22px);
+  transition:opacity .55s ease,transform .55s ease,box-shadow .3s;
+}
+.sec.vis{opacity:1;transform:none;}
+.sec:hover{box-shadow:var(--card-shadow-hover);}
+
+.sh{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:15px 18px 13px;
+  border-bottom:1px solid var(--line);
+}
+.sh-left{display:flex;align-items:center;gap:10px;}
+.sh-icon{
+  width:30px;height:30px;border-radius:9px;
+  background:var(--blue-pale);
+  display:flex;align-items:center;justify-content:center;
+}
+.sh-icon svg{width:14px;height:14px;}
+.sh-title{font-size:15px;font-weight:800;color:var(--navy);}
+.sh-badge{
+  font-size:10px;color:var(--soft);
+  background:var(--bg);border:1px solid var(--line);
+  padding:2px 8px;border-radius:20px;font-weight:600;
+}
+
+/* ─── ABOUT ─── */
+.about-body{padding:16px 18px 18px;}
+.about-quote{
+  font-size:14px;font-weight:600;color:var(--blue);
+  line-height:1.7;padding-right:13px;
+  border-right:3px solid var(--blue);
+  margin-bottom:12px;font-style:italic;
+}
+.about-txt{font-size:13px;line-height:1.85;color:var(--mid);}
+.stats-row{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--line);
+  background:var(--line);gap:1px;margin-top:16px;
+}
+.stat-c{
+  background:var(--white);padding:13px 8px;text-align:center;
+}
+.stat-n{
+  font-size:21px;font-weight:900;
+  background:linear-gradient(135deg,var(--blue),#5aa8ff);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;line-height:1;
+}
+.stat-l{font-size:9px;color:var(--soft);margin-top:3px;font-weight:600;letter-spacing:.3px;}
+
+/* ─── SERVICES ─── */
+.svc-row{border-bottom:1px solid var(--line);}
+.svc-row:last-child{border-bottom:none;}
+.svc-head{
+  display:flex;align-items:center;gap:11px;
+  padding:14px 18px;cursor:pointer;
+  user-select:none;transition:background .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.svc-head.open,.svc-head:active{background:#f0f5ff;}
+.svc-head.open .svc-nm{color:var(--blue);}
+.svc-head.open .svc-ch{transform:rotate(180deg);color:var(--blue);}
+.svc-ico-box{
+  width:36px;height:36px;border-radius:10px;
+  background:var(--bg);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;font-size:19px;
+  transition:all .2s;
+}
+.svc-head.open .svc-ico-box{background:#ddeeff;border-color:rgba(26,107,204,.25);}
+.svc-meta{flex:1;min-width:0;}
+.svc-nm{font-size:14px;font-weight:700;color:var(--navy);transition:color .2s;line-height:1.25;}
+.svc-hint{font-size:11px;color:var(--soft);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.svc-ch{color:var(--line);font-size:10px;transition:all .25s;flex-shrink:0;font-weight:900;}
+.svc-body{max-height:0;overflow:hidden;transition:max-height .42s cubic-bezier(.4,0,.2,1);}
+.svc-body.open{max-height:700px;}
+.svc-inner{padding:2px 18px 18px;}
+.svc-list{list-style:none;margin-bottom:14px;display:flex;flex-direction:column;gap:8px;padding-top:12px;}
+.svc-list li{
+  display:flex;align-items:flex-start;gap:8px;
+  font-size:12.5px;color:var(--mid);line-height:1.65;
+}
+.li-check{
+  width:17px;height:17px;border-radius:50%;
+  background:var(--blue-pale);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+}
+.li-check svg{width:9px;height:9px;}
+/* WhatsApp button per service */
+.svc-wa-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;background:var(--wa);color:#fff;
+  border:none;border-radius:12px;padding:12px;
+  font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;
+  cursor:pointer;-webkit-tap-highlight-color:transparent;transition:all .18s;
+}
+.svc-wa-btn:active{transform:scale(.97);background:#1fbc5a;}
+.svc-wa-btn svg{width:18px;height:18px;flex-shrink:0;}
+
+/* ─── CONTACT ROWS ─── */
+.cr{
+  display:flex;align-items:center;gap:11px;
+  padding:13px 18px;
+  text-decoration:none;color:var(--navy);
+  border-bottom:1px solid var(--line);
+  cursor:pointer;transition:background .18s;
+  -webkit-tap-highlight-color:transparent;
+  border:none;background:none;width:100%;
+  text-align:right;font-family:'Heebo',sans-serif;
+}
+.cr:not(:last-child){border-bottom:1px solid var(--line)!important;}
+.cr:last-child{border-bottom:none;}
+.cr:active{background:var(--bg);}
+.cr-ico{
+  width:36px;height:36px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;overflow:hidden;
+}
+.cr-ico svg,.cr-ico img{width:21px;height:21px;object-fit:contain;display:block;}
+.cr-txt{flex:1;}
+.cr-lbl{font-size:10px;color:var(--soft);font-weight:600;letter-spacing:.3px;}
+.cr-val{font-size:13px;font-weight:600;color:var(--navy);margin-top:1px;}
+.cr-arr{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--bg);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.cr-arr svg{width:9px;height:9px;}
+
+/* ─── GOOGLE REVIEWS ─── */
+.rv-empty{padding:28px 18px 24px;text-align:center;}
+.rv-empty-logo{margin-bottom:12px;}
+.rv-empty-logo svg{width:40px;height:40px;}
+.rv-empty-t{font-size:15px;font-weight:800;margin-bottom:5px;}
+.rv-empty-s{font-size:12px;color:var(--soft);line-height:1.65;}
+.rv-write-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  margin-top:14px;background:var(--navy);color:#fff;
+  border:none;border-radius:12px;padding:10px 20px;
+  font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;
+  cursor:pointer;text-decoration:none;transition:all .2s;
+}
+.rv-write-btn:active{background:var(--navy2);}
+.rv-header{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:15px 18px;border-bottom:1px solid var(--line);
+  background:#fffdf8;
+}
+.rv-score{font-size:44px;font-weight:900;color:var(--navy);line-height:1;}
+.rv-stars{display:flex;gap:2px;margin-top:4px;}
+.rv-stars svg{width:14px;height:14px;}
+.rv-count{font-size:11px;color:var(--soft);margin-top:3px;}
+.rv-google-tag{
+  display:flex;align-items:center;gap:4px;
+  margin-top:5px;font-size:10px;color:var(--soft);font-weight:500;
+}
+.rv-item{padding:14px 18px;border-bottom:1px solid var(--line);}
+.rv-item:last-of-type{border-bottom:none;}
+.rv-top{display:flex;align-items:center;gap:9px;margin-bottom:7px;}
+.rv-av{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--navy);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;flex-shrink:0;overflow:hidden;
+}
+.rv-av img{width:100%;height:100%;object-fit:cover;}
+.rv-nm{font-size:13px;font-weight:700;}
+.rv-dt{font-size:10px;color:var(--soft);}
+.rv-s{display:flex;gap:2px;margin-bottom:7px;}
+.rv-s svg{width:12px;height:12px;}
+.rv-txt{font-size:12.5px;color:var(--mid);line-height:1.7;}
+.rv-add{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  padding:13px;background:#f8fffd;border-top:1px solid var(--line);
+  text-decoration:none;font-size:12px;color:#1a73e8;font-weight:700;
+}
+.rv-add:active{background:#edf5ff;}
+
+/* ─── MAP ─── */
+.map-wrap{position:relative;}
+.map-badge{
+  position:absolute;top:10px;right:10px;z-index:2;
+  background:var(--white);padding:5px 11px;border-radius:9px;
+  font-size:10px;font-weight:700;color:var(--navy);
+  box-shadow:0 2px 10px rgba(0,0,0,.12);
+  display:flex;align-items:center;gap:5px;
+  pointer-events:none;
+}
+.map-badge svg{width:11px;height:11px;}
+.map-wrap iframe{
+  width:100%;height:185px;border:none;display:block;
+  filter:saturate(.8) contrast(.95) brightness(1.02);
+  transition:filter .35s;
+}
+.map-wrap:hover iframe{filter:none;}
+.map-nav-btn{
+  display:flex;align-items:center;gap:10px;
+  padding:13px 18px;border-top:1px solid var(--line);
+  cursor:pointer;-webkit-tap-highlight-color:transparent;
+  border:none;background:none;width:100%;text-align:right;
+  font-family:'Heebo',sans-serif;transition:background .18s;
+}
+.map-nav-btn:active{background:var(--bg);}
+
+/* ─── FORM ─── */
+.form-body{padding:16px 18px 18px;}
+.fg{margin-bottom:12px;}
+.fg label{display:block;font-size:10px;font-weight:700;color:var(--mid);margin-bottom:5px;letter-spacing:.3px;}
+.fg input,.fg select,.fg textarea{
+  width:100%;background:var(--bg);border:1.5px solid var(--line);
+  color:var(--navy);padding:11px 13px;border-radius:11px;
+  font-family:'Heebo',sans-serif;font-size:13.5px;outline:none;
+  transition:all .2s;appearance:none;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--blue);background:var(--white);
+  box-shadow:0 0 0 3px rgba(26,107,204,.12);
+}
+.fg textarea{height:76px;resize:none;}
+.fg select option{background:var(--white);}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.form-submit{
+  width:100%;background:var(--wa);color:#fff;border:none;
+  border-radius:13px;padding:14px;
+  font-family:'Heebo',sans-serif;font-size:14px;font-weight:800;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:all .18s;-webkit-tap-highlight-color:transparent;
+}
+.form-submit svg{width:18px;height:18px;flex-shrink:0;}
+.form-submit:active{transform:scale(.97);background:#1fbc5a;}
+.form-note{
+  text-align:center;font-size:11px;color:var(--soft);margin-top:10px;
+  display:flex;align-items:center;justify-content:center;gap:4px;
+}
+
+/* ─── FOOTER ─── */
+.footer{
+  text-align:center;padding:22px 20px 44px;
+  position:relative;z-index:1;
+}
+.footer-av{
+  width:50px;height:50px;border-radius:14px;
+  overflow:hidden;margin:0 auto 10px;
+  border:2px solid var(--line);box-shadow:var(--card-shadow);
+}
+.footer-av img{width:100%;height:100%;object-fit:cover;}
+.footer-nm{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:2px;}
+.footer-sub{font-size:11px;color:var(--soft);}
+.footer-copy{font-size:10px;color:var(--line);margin-top:10px;}
+.footer-admin{font-size:9px;color:var(--line);text-decoration:none;display:inline-block;margin-top:6px;}
+
+/* ─── FAB ─── */
+.fab-stack{
+  position:fixed;bottom:22px;left:22px;
+  display:flex;flex-direction:column;gap:9px;z-index:5000;
+}
+.fab{
+  width:48px;height:48px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;text-decoration:none;border:none;
+  transition:transform .18s,box-shadow .18s;
+}
+.fab svg{width:24px;height:24px;display:block;}
+.fab.fa-wa{
+  background:var(--wa);
+  box-shadow:0 4px 14px rgba(37,211,102,.4);
+  animation:waFab 2.5s ease-in-out infinite;
+}
+.fab.fa-sms{background:#ff8c00;box-shadow:0 4px 14px rgba(255,140,0,.3);}
+.fab:active{transform:scale(.9);}
+@keyframes waFab{
+  0%,100%{box-shadow:0 4px 14px rgba(37,211,102,.4);}
+  50%{box-shadow:0 4px 24px rgba(37,211,102,.65),0 0 0 6px rgba(37,211,102,.08);}
+}
+
+/* ─── TOAST ─── */
+.toast{
+  position:fixed;bottom:20px;left:50%;
+  transform:translateX(-50%) translateY(50px);
+  background:var(--navy2);color:#fff;
+  padding:10px 18px;border-radius:22px;
+  font-size:12px;font-weight:600;
+  z-index:9999;opacity:0;transition:all .3s;
+  white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.18);
+  pointer-events:none;
+}
+.toast.on{transform:translateX(-50%) translateY(0);opacity:1;}
+
+/* ─── SHARED SVG FILLS ─── */
+.f-wa{fill:#25d366} .f-fb{fill:#1877f2} .f-mail{fill:#e8920a}
+.f-phone{fill:#7c5ce7} .f-sms{fill:#e07828} .f-maps{fill:#34a853}
+.f-share{fill:#1a9550} .f-vc{fill:#5a6880} .f-mid{fill:#1a55bc}
+.f-arr{fill:#b0bace} .f-blue{fill:#1a6bcc}
+
+/* ── AVATAR RING (correct approach) ── */
+.av-wrap{
+  width:110px;height:110px;
+  margin:-55px auto 16px;
+  position:relative;
+  display:inline-block;
+  flex-shrink:0;
+}
+/* spinning arc ring — SVG on top */
+.av-ring-svg{
+  position:absolute;inset:0;
+  width:110px;height:110px;
+  animation:spinRing 5s linear infinite;
+  z-index:3;pointer-events:none;
+}
+/* white background circle */
+.av-bg{
+  position:absolute;inset:0;
+  border-radius:50%;
+  background:white;
+  z-index:1;
+}
+/* image container — clips to circle */
+.av-img-wrap{
+  position:absolute;inset:5px;
+  border-radius:50%;
+  overflow:hidden;
+  z-index:2;
+  box-shadow:0 0 0 2px rgba(255,255,255,.8), 0 4px 20px rgba(6,182,212,.2);
+}
+.av-img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+}
+@keyframes spinRing{to{transform:rotate(360deg)}}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-cover">
+    <img src="https://d-cards.co.il/wp-content/uploads/2023/09/cohen.jpg" alt="עו״ד יצחק כהן" class="hero-cover-img" onerror="this.parentElement.style.height='80px'">
+    <div class="hero-cover-grad"></div>
+  </div>
+  <div class="hero-body">
+    <div class="av-wrap">
+      <!-- spinning SVG arc -->
+      <svg class="av-ring-svg" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="55" cy="55" r="50"
+          fill="none"
+          stroke="#06b6d4"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="190 124"/>
+      </svg>
+      <!-- white bg circle -->
+      <div class="av-bg"></div>
+      <!-- image clipped to circle -->
+      <div class="av-img-wrap">
+        <img src="https://d-cards.co.il/wp-content/uploads/2023/09/cohen.jpg"
+             alt="עו&quot;ד יצחק כהן"
+             class="av-img"
+             onerror="this.style.display='none'">
+      </div>
+    </div>
+    <div class="status-pill"><div class="status-dot"></div>פעיל ומקבל לקוחות</div>
+    <h1 class="hero-name">עו"ד יצחק (איציק) כהן</h1>
+    <div class="hero-role">עורך דין ונוטריון</div>
+    <div class="hero-motto">מכניס את הלב למקצוע</div>
+    <div class="hero-tags">
+      <span class="tag"><svg width="10" height="10" viewBox="0 0 24 24"><path fill="#5a6880" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>חולון</span>
+      <span class="tag">⚖️ מקרקעין</span>
+      <span class="tag">📜 נוטריון</span>
+      <span class="tag">🏢 חברות</span>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK ACTIONS -->
+<div class="qa-wrap">
+  <div class="qa-card">
+    <div class="qa-grid">
+      <!-- Row 1 -->
+      <button class="qa-btn" onclick="openWA('כללי')">
+        <div class="qa-ico ic-wa"><svg viewBox="0 0 24 24"><path class="f-wa" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path class="f-wa" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></div>
+        <span class="qa-lbl">WhatsApp</span>
+      </button>
+      <a href="sms:0526768562" class="qa-btn">
+        <div class="qa-ico ic-sms"><svg viewBox="0 0 24 24"><path class="f-sms" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></div>
+        <span class="qa-lbl">SMS</span>
+      </a>
+      <a href="tel:0526768562" class="qa-btn">
+        <div class="qa-ico ic-mob"><svg viewBox="0 0 24 24"><path fill="#7c5ce7" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+        <span class="qa-lbl">נייד</span>
+      </a>
+      <a href="tel:035755722" class="qa-btn">
+        <div class="qa-ico ic-off"><svg viewBox="0 0 24 24"><path fill="#e05060" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+        <span class="qa-lbl">משרד</span>
+      </a>
+      <a href="/cdn-cgi/l/email-protection#a8c1dcd2c1c386cbc7c0cdc686c4c9dfe8cfc5c9c1c486cbc7c5" class="qa-btn">
+        <div class="qa-ico ic-mail"><svg viewBox="0 0 24 24"><path class="f-mail" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+        <span class="qa-lbl">מייל</span>
+      </a>
+    </div>
+    <div class="qa-sep"></div>
+    <div class="qa-grid">
+      <!-- Row 2 -->
+      <button class="qa-btn" onclick="openWaze()">
+        <div class="qa-ico ic-wz"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="28" rx="22" ry="20" fill="#06d6f0"/><ellipse cx="32" cy="28" rx="17" ry="15" fill="#fff"/><circle cx="32" cy="28" r="5" fill="#06d6f0"/><ellipse cx="32" cy="49" rx="6" ry="9" fill="#06d6f0"/><circle cx="24" cy="22" r="3" fill="#1a1a2e"/><circle cx="40" cy="22" r="3" fill="#1a1a2e"/><path d="M24 34 q8 7 16 0" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+        <span class="qa-lbl">Waze</span>
+      </button>
+      <a href="https://www.facebook.com/profile.php?id=100095657407511" target="_blank" class="qa-btn">
+        <div class="qa-ico ic-fb"><svg viewBox="0 0 24 24"><path class="f-fb" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
+        <span class="qa-lbl">פייסבוק</span>
+      </a>
+      <button class="qa-btn" onclick="shareMe()">
+        <div class="qa-ico ic-sh"><svg viewBox="0 0 24 24"><path class="f-share" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg></div>
+        <span class="qa-lbl">שתף</span>
+      </button>
+      <button class="qa-btn" onclick="addContact()">
+        <div class="qa-ico ic-vc"><svg viewBox="0 0 24 24"><path class="f-vc" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+        <span class="qa-lbl">אנשי קשר</span>
+      </button>
+      <a href="https://maps.google.com/?q=הכישור+47+חולון" target="_blank" class="qa-btn">
+        <div class="qa-ico ic-gm"><svg viewBox="0 0 24 24"><path class="f-maps" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <span class="qa-lbl">מפות</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="sec" data-delay="0">
+  <div class="sh">
+    <div class="sh-left">
+      <div class="sh-icon"><svg viewBox="0 0 24 24"><path class="f-blue" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+      <span class="sh-title">אודות</span>
+    </div>
+  </div>
+  <div class="about-body">
+    <p class="about-quote">"המקצוע אינו תפקיד גרידא אלא שליחות להשגת שביעות רצון הלקוח"</p>
+    <p class="about-txt">משרד עורך הדין ונוטריון כהן יצחק הינו משרד בוטיק שצבר ניסיון ומוניטין רב בתחום המקרקעין על כל גווניו. האני מאמין של עו"ד כהן יצחק הוא כי המקצוע אינו תפקיד גרידא אלא שליחות — תוך מתן דגש על יושרה, מקצועיות ויחס אישי לכל לקוח.</p>
+  </div>
+  <div class="stats-row">
+    <div class="stat-c"><div class="stat-n">15+</div><div class="stat-l">שנות ניסיון</div></div>
+    <div class="stat-c"><div class="stat-n">500+</div><div class="stat-l">לקוחות</div></div>
+    <div class="stat-c"><div class="stat-n">48ש'</div><div class="stat-l">הקמת חברה</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="sec" data-delay="60">
+  <div class="sh">
+    <div class="sh-left">
+      <div class="sh-icon"><svg viewBox="0 0 24 24"><path class="f-blue" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+      <span class="sh-title">שירותים</span>
+    </div>
+    <span class="sh-badge">5 תחומים</span>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-head" onclick="toggleSvc(this)">
+      <div class="svc-ico-box">🏠</div>
+      <div class="svc-meta"><div class="svc-nm">מקרקעין ומיסוי מקרקעין</div><div class="svc-hint">רכישה, מכירה, שכירות, טאבו</div></div>
+      <span class="svc-ch">▾</span>
+    </div>
+    <div class="svc-body">
+      <div class="svc-inner">
+        <ul class="svc-list">
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייצוג ברכישה / מכירת דירות (יד 2 / קבלן / דירות יוקרה) וליווי שוטף עד לרישום סופי בטאבו</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייצוג ברכישת נכסים מסחריים מניבים, מגרשים, מבני תעשייה ועוד</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייצוג בהסכמי שכירות תוך מתן דגש על ערבויות ובטחונות הנדרשים לבעלי הנכסים</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>רישום נכסים בטאבו, רשות מינהל מקרקעי ישראל וחברות משכנות — לרבות נכסים סבוכים ונכסים היסטוריים</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייעוץ והכוונה לכדאיות כלכלית לעסקת רכישה או מכירה בפן המיסוי</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייצוג תושבי חוץ ברכישה ומכירת נכסי מקרקעין בישראל</li>
+        </ul>
+        <button class="svc-wa-btn" onclick="openWA('מקרקעין')"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>שאל על מקרקעין ב-WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-head" onclick="toggleSvc(this)">
+      <div class="svc-ico-box">📜</div>
+      <div class="svc-meta"><div class="svc-nm">ירושה ומשפחה</div><div class="svc-hint">צוואות, הסכמי ממון, צו ירושה</div></div>
+      <span class="svc-ch">▾</span>
+    </div>
+    <div class="svc-body">
+      <div class="svc-inner">
+        <ul class="svc-list">
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>עריכת צוואה בעדים וכן צוואה נוטריונית — כל סוגי הצוואות: פרטית / הדדית / הלכתית</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>טיפול מקיף בהליך הנפקת צו ירושה וצו קיום צוואה לרבות הפעלת מנגנון מנהל עזבון</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>רישום עזבונות ברשויות המוסמכות: לשכת רישום המקרקעין, משרד התחבורה, בנקים</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>עריכת הסכם ממון לפני נישואין באימות נוטריוני</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>עריכת הסכם ממון לידועים בציבור וזוגות נשואים</li>
+        </ul>
+        <button class="svc-wa-btn" onclick="openWA('ירושה')"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>שאל על ירושה ב-WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-head" onclick="toggleSvc(this)">
+      <div class="svc-ico-box">🏢</div>
+      <div class="svc-meta"><div class="svc-nm">חברות ומסחרי</div><div class="svc-hint">הקמה, פירוק, העברת מניות</div></div>
+      <span class="svc-ch">▾</span>
+    </div>
+    <div class="svc-body">
+      <div class="svc-inner">
+        <ul class="svc-list">
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>הקמת חברה בע"מ בהליך מזורז בתוך כ-48 שעות בלבד</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>פירוק חברה בע"מ בהליך מזורז ויעיל</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>העברה / הקצאת מניות בחברה בע"מ</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>מתן ייעוץ משפטי שוטף לפעילות מסחרית של חברות מול ספקים ונותני שירות</li>
+        </ul>
+        <button class="svc-wa-btn" onclick="openWA('חברות')"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>שאל על חברות ב-WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-head" onclick="toggleSvc(this)">
+      <div class="svc-ico-box">✒️</div>
+      <div class="svc-meta"><div class="svc-nm">נוטריון</div><div class="svc-hint">אימות מסמכים, ייפויי כוח</div></div>
+      <span class="svc-ch">▾</span>
+    </div>
+    <div class="svc-body">
+      <div class="svc-inner">
+        <ul class="svc-list">
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>אימות מסמכים ותרגומים לשימוש בחו"ל</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>צוואות נוטריוניות ואימות הסכמי ממון</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייפויי כוח נוטריוניים לכל מטרה, כולל בלתי חוזרים</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>אישורי נוטריון לרשויות בישראל ובחו"ל</li>
+        </ul>
+        <button class="svc-wa-btn" onclick="openWA('נוטריון')"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>שאל על נוטריון ב-WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-head" onclick="toggleSvc(this)">
+      <div class="svc-ico-box">🌍</div>
+      <div class="svc-meta"><div class="svc-nm">תושבי חוץ</div><div class="svc-hint">רכישה מרחוק, מיסוי בינלאומי</div></div>
+      <span class="svc-ch">▾</span>
+    </div>
+    <div class="svc-body">
+      <div class="svc-inner">
+        <ul class="svc-list">
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייצוג תושבי חוץ ברכישה ומכירת נכסי מקרקעין בישראל</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייעוץ מיסויי ייעודי לתושבי חוץ הרוכשים נכסים</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>טיפול בכל ההיבטים הבירוקרטיים עבור לקוחות שאינם בישראל</li>
+          <li><span class="li-check"><svg viewBox="0 0 24 24"><path fill="#1a6bcc" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>ייפויי כוח לנציגות בישראל בעסקאות מקרקעין</li>
+        </ul>
+        <button class="svc-wa-btn" onclick="openWA('תושבי חוץ')"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>שאל על תושב חוץ ב-WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec" data-delay="120">
+  <div class="sh">
+    <div class="sh-left">
+      <div class="sh-icon"><svg viewBox="0 0 24 24"><path class="f-blue" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+      <span class="sh-title">יצירת קשר</span>
+    </div>
+  </div>
+  <button class="cr" onclick="openWA('כללי')" style="display:flex">
+    <div class="cr-ico ic-wa"><svg viewBox="0 0 24 24"><path fill="#25d366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#25d366" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">WhatsApp</div><div class="cr-val">הודעה מיידית</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </button>
+  <a href="sms:0526768562" class="cr">
+    <div class="cr-ico ic-sms"><svg viewBox="0 0 24 24"><path class="f-sms" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">SMS</div><div class="cr-val">052-676-8562</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </a>
+  <a href="tel:0526768562" class="cr">
+    <div class="cr-ico ic-mob"><svg viewBox="0 0 24 24"><path fill="#7c5ce7" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">נייד</div><div class="cr-val">052-676-8562</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </a>
+  <a href="tel:035755722" class="cr">
+    <div class="cr-ico ic-off"><svg viewBox="0 0 24 24"><path fill="#e05060" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">משרד</div><div class="cr-val">03-575-5722</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </a>
+  <a href="/cdn-cgi/l/email-protection#167f626c7f7d3875797e7378387a776156717b777f7a3875797b" class="cr">
+    <div class="cr-ico ic-mail"><svg viewBox="0 0 24 24"><path class="f-mail" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">מייל</div><div class="cr-val"><span class="__cf_email__" data-cfemail="4d2439372426632e2225282363212c3a0d2a202c2421632e2220">[email&#160;protected]</span></div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100095657407511" target="_blank" class="cr">
+    <div class="cr-ico ic-fb"><svg viewBox="0 0 24 24"><path class="f-fb" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">פייסבוק</div><div class="cr-val">עמוד הפייסבוק</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </a>
+  <button class="cr" onclick="openWaze()" style="display:flex">
+    <div class="cr-ico ic-wz"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="28" rx="22" ry="20" fill="#06d6f0"/><ellipse cx="32" cy="28" rx="17" ry="15" fill="#fff"/><circle cx="32" cy="28" r="5" fill="#06d6f0"/><ellipse cx="32" cy="49" rx="6" ry="9" fill="#06d6f0"/><circle cx="24" cy="22" r="3" fill="#1a1a2e"/><circle cx="40" cy="22" r="3" fill="#1a1a2e"/><path d="M24 34 q8 7 16 0" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">Waze</div><div class="cr-val">הכישור 47, חולון</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </button>
+  <button class="cr" onclick="shareMe()" style="display:flex">
+    <div class="cr-ico ic-sh"><svg viewBox="0 0 24 24"><path class="f-share" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">שתף</div><div class="cr-val">שתף כרטיס ביקור</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </button>
+  <button class="cr" onclick="addContact()" style="display:flex">
+    <div class="cr-ico ic-vc"><svg viewBox="0 0 24 24"><path class="f-vc" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">הוסף לאנשי קשר</div><div class="cr-val">שמור ב-iPhone / Android</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </button>
+</div>
+
+<!-- GOOGLE REVIEWS -->
+<div class="sec" data-delay="180">
+  <div class="sh">
+    <div class="sh-left">
+      <div class="sh-icon"><svg viewBox="0 0 24 24"><path fill="#f5c518" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+      <span class="sh-title">ביקורות גוגל</span>
+    </div>
+  </div>
+  <div id="reviewsContent">
+    <div class="rv-empty">
+      <div class="rv-empty-logo">
+        <svg viewBox="0 0 48 48"><path d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 2.9l5.7-5.7C34.3 6.5 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z" fill="#FFC107"/><path d="M6.3 14.7l6.6 4.8C14.5 16 19 12 24 12c3.1 0 5.8 1.1 7.9 2.9l5.7-5.7C34.3 6.5 29.4 4 24 4 16.3 4 9.7 8.5 6.3 14.7z" fill="#FF3D00"/><path d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.3C29.3 35.3 26.8 36 24 36c-5.3 0-9.7-3.3-11.3-8H6.4C9.7 35.5 16.3 44 24 44z" fill="#4CAF50"/><path d="M43.6 20.5H42V20H24v8h11.3c-.9 2.5-2.5 4.7-4.6 6.2l6.2 5.3C41.5 36.3 44 30.6 44 24c0-1.2-.1-2.4-.4-3.5z" fill="#1976D2"/></svg>
+      </div>
+      <div class="rv-empty-t">ביקורות גוגל</div>
+      <div class="rv-empty-s">ביקורות ייטענו אחרי חיבור Google API בלוח הניהול<br><small style="color:#c0c8d8">cohen-admin.html</small></div>
+      <a href="https://www.google.com/search?q=%D7%A2%D7%95%D7%A8%D7%9A+%D7%93%D7%99%D7%9F+%D7%99%D7%A6%D7%97%D7%A7+%D7%9B%D7%94%D7%9F&zx=1775169662754#" target="_blank" class="rv-write-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24"><path fill="white" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        כתוב ביקורת
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- MAP -->
+<div class="sec" data-delay="220">
+  <div class="sh">
+    <div class="sh-left">
+      <div class="sh-icon"><svg viewBox="0 0 24 24"><path class="f-blue" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+      <span class="sh-title">מיקום</span>
+    </div>
+  </div>
+  <div class="map-wrap">
+    <div class="map-badge"><svg width="11" height="11" viewBox="0 0 24 24"><path fill="#1a6bcc" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>הכישור 47, חולון</div>
+    <iframe src="https://maps.google.com/maps?q=הכישור+47+חולון&output=embed&z=16" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <button class="map-nav-btn" onclick="openWaze()">
+    <div class="cr-ico ic-wz" style="width:36px;height:36px;border-radius:10px;flex-shrink:0"><svg viewBox="0 0 64 64" style="width:21px;height:21px"><ellipse cx="32" cy="28" rx="22" ry="20" fill="#06d6f0"/><ellipse cx="32" cy="28" rx="17" ry="15" fill="#fff"/><circle cx="32" cy="28" r="5" fill="#06d6f0"/><ellipse cx="32" cy="49" rx="6" ry="9" fill="#06d6f0"/><circle cx="24" cy="22" r="3" fill="#1a1a2e"/><circle cx="40" cy="22" r="3" fill="#1a1a2e"/><path d="M24 34 q8 7 16 0" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">ניווט</div><div class="cr-val">פתח Waze להגעה למשרד</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24" style="width:9px;height:9px"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </button>
+</div>
+
+<!-- FORM -->
+<div class="sec" data-delay="260">
+  <div class="sh">
+    <div class="sh-left">
+      <div class="sh-icon"><svg viewBox="0 0 24 24"><path class="f-blue" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+      <span class="sh-title">השאר פרטים</span>
+    </div>
+  </div>
+  <div class="form-body">
+    <div class="fg-row">
+      <div class="fg"><label>שם מלא</label><input type="text" id="fn" placeholder="ישראל ישראלי"></div>
+      <div class="fg"><label>טלפון</label><input type="tel" id="fp" placeholder="050-0000000"></div>
+    </div>
+    <div class="fg"><label>תחום</label><select id="ft"><option value="">בחר...</option><option>מקרקעין ומיסוי</option><option>ירושה / צוואה</option><option>הסכם ממון</option><option>הקמת חברה</option><option>נוטריון</option><option>תושב חוץ</option><option>אחר</option></select></div>
+    <div class="fg"><label>הודעה</label><textarea id="fm" placeholder="ספר לנו בקצרה..."></textarea></div>
+    <button class="form-submit" onclick="sendForm()">
+      <svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      שלח ב-WhatsApp
+    </button>
+    <div class="form-note"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#b0bace" d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>נחזור אליכם תוך שעות</div>
+  </div>
+  <!-- MIDRAG LINK -->
+  <a href="https://www.midrag.co.il/SpCard/Sp/93166?areaId=1&serviceId=1544&isGeneric=false" target="_blank" style="display:flex;align-items:center;gap:11px;padding:13px 18px;border-top:1px solid var(--line);text-decoration:none;color:var(--navy);transition:background .18s" onmousedown="this.style.background='var(--bg)'" onmouseup="this.style.background=''">
+    <div class="cr-ico ic-mi"><svg viewBox="0 0 24 24"><path class="f-mid" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+    <div class="cr-txt"><div class="cr-lbl">מידרג</div><div class="cr-val">דירוג ופרטים במידרג</div></div>
+    <div class="cr-arr"><svg viewBox="0 0 24 24" style="width:9px;height:9px"><path class="f-arr" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></div>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-av"><img src="https://d-cards.co.il/wp-content/uploads/2023/09/cohen.jpg" alt="לוגו"></div>
+  <div class="footer-nm">עו"ד יצחק (איציק) כהן</div>
+  <div class="footer-sub">עורך דין ונוטריון · חולון</div>
+  <div class="footer-copy">© 2025 כל הזכויות שמורות</div>
+  <a href="cohen-admin.html" class="footer-admin">⚙ ניהול</a>
+</div>
+
+<!-- FABs -->
+<div class="fab-stack">
+  <button class="fab fa-wa" onclick="openWA('כללי')" title="WhatsApp"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="#fff" d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.845L.525 23.5l5.83-.998A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.856 0-3.593-.5-5.095-1.375l-.364-.214-3.764.645.663-3.653-.234-.375A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></button>
+  <a href="sms:0526768562" class="fab fa-sms" title="SMS"><svg viewBox="0 0 24 24"><path fill="#fff" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></a>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* SCROLL REVEAL */
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const d = parseInt(e.target.dataset.delay || 0);
+      setTimeout(() => e.target.classList.add('vis'), d);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.sec').forEach(s => obs.observe(s));
+
+/* SERVICES */
+function toggleSvc(h) {
+  const b = h.nextElementSibling;
+  const open = h.classList.contains('open');
+  document.querySelectorAll('.svc-head').forEach(x => { x.classList.remove('open'); x.nextElementSibling.classList.remove('open'); });
+  if (!open) { h.classList.add('open'); b.classList.add('open'); }
+}
+
+/* WA MESSAGES PER SERVICE */
+const WA = {
+  'כללי':      'שלום איציק, אשמח לקבל ייעוץ משפטי. האם תוכל לחזור אליי?',
+  'מקרקעין':   'שלום איציק, אני מתעניין/ת בשירותי מקרקעין. האם תוכל לחזור אליי?',
+  'ירושה':     'שלום איציק, אני זקוק/ה לייעוץ בנושא ירושה / צוואה / הסכם ממון. האם תוכל לחזור אליי?',
+  'חברות':     'שלום איציק, אני מעוניין/ת בהקמת חברה בע"מ. האם תוכל לחזור אליי?',
+  'נוטריון':   'שלום איציק, אני זקוק/ה לשירות נוטריון. האם תוכל לחזור אליי?',
+  'תושבי חוץ': 'Hello Itzik, I am a foreign resident interested in purchasing real estate in Israel. Please contact me.',
+};
+function openWA(s) {
+  const num = localStorage.getItem('wa_num') || '972526768562';
+  window.open('https://wa.me/' + num + '?text=' + encodeURIComponent(WA[s] || WA['כללי']), '_blank');
+}
+function openWaze() { window.open('https://waze.com/ul?q=הכישור+47+חולון&navigate=yes', '_blank'); }
+function shareMe() {
+  if (navigator.share) { navigator.share({ title: 'עו"ד יצחק כהן', text: 'עורך דין ונוטריון', url: location.href }); }
+  else { navigator.clipboard?.writeText(location.href); showToast('🔗 הקישור הועתק!'); }
+}
+function addContact() {
+  const v = "BEGIN:VCARD\nVERSION:3.0\nFN:עו\"ד יצחק כהן\nN:כהן;יצחק;;;\nORG:משרד עורכי דין ונוטריון כהן יצחק\nTITLE:עורך דין ונוטריון\nTEL;TYPE=CELL:0526768562\nTEL;TYPE=WORK:035755722\nEMAIL;TYPE=WORK:itzik.cohen.law@gmail.com\nADR;TYPE=WORK:;;רחוב הכישור 47;חולון;;;ישראל\nURL:https://www.facebook.com/profile.php?id=100095657407511\nEND:VCARD";
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([v], { type: 'text/vcard' }));
+  a.download = 'itzik-cohen.vcf'; a.click();
+  showToast('📱 הורד — פתח להוספה לאנשי קשר');
+}
+function sendForm() {
+  const n = document.getElementById('fn')?.value?.trim();
+  const p = document.getElementById('fp')?.value?.trim();
+  const t = document.getElementById('ft')?.value;
+  const m = document.getElementById('fm')?.value?.trim();
+  if (!n) { showToast('אנא הכנס שם'); return; }
+  if (!p) { showToast('אנא הכנס טלפון'); return; }
+  const msg = 'פנייה מהאתר\n\nשם: ' + n + '\nטלפון: ' + p + (t ? '\nנושא: ' + t : '') + (m ? '\nהודעה: ' + m : '');
+  window.open('https://wa.me/972526768562?text=' + encodeURIComponent(msg), '_blank');
+  showToast('✅ הפנייה נשלחת...');
+}
+
+/* GOOGLE REVIEWS */
+const RV=[{name:"אופיר שלום אל",av:"https://lh3.googleusercontent.com/a/ACg8ocJ6OQWhChrEaLj6Srb5vZBmowgcxNuhDzJQncQha08nxNcDcQ=s120-c-rp-mo-br100",rating:5,date:"לפני 8 חודשים",text:"ממליץ עליו בחום — ליווה אותנו בכל תהליך רכישת הדירה, היה זמין בכל שעה ביום, קשוב, מקצועי, יסודי ואחראי! מי שיבחר בו יזכה להרבה שקט ועבודה יסודית 🙏"},{name:"Dariya Kofman",av:"https://lh3.googleusercontent.com/a/ACg8ocLl4a5oGjyNo4W53AbB3ryzieVg68Bl69lAp40TccPiiO9Ahg=s120-c-rp-mo-ba2-br100",rating:5,date:"לפני 8 חודשים",text:"הפגין מקצועיות, יסודיות וסבלנות יוצאת דופן. היה זמין לכל שאלה, הסביר כל שלב בפירוט ונתן תחושת ביטחון לאורך כל התהליך. בזכותו העסקה התבצעה חלק. ממליצה מכל הלב!"},{name:"Moshiko lozon",av:"https://lh3.googleusercontent.com/a/ACg8ocIqFIPgfmQy5wllupCGhh6sffFgcqxprcH1G3nYx7CrQMNQpQ=s120-c-rp-mo-br100",rating:5,date:"לפני 11 חודשים",text:"מדובר באיש מקצוע ברמה הגבוהה ביותר — מכיר את החוק על בוריו, מסביר כל שלב בצורה ברורה. כל שאלה זכתה למענה מיידי. מעבר למקצועיות גם היחס האישי, הסבלנות והזמינות יוצאת הדופן."},{name:"נוי פליישר",av:"https://lh3.googleusercontent.com/a/ACg8ocIzeHQZfYkumrM3O-FsoZAiww5qRNQ-jfmImeM6hVFgQb00jg=s120-c-rp-mo-br100",rating:5,date:"לפני 8 חודשים",text:"איציק הוא עורך דין מקצועי, סבלני וזמין שליווה אותי ברכישת דירה. הסביר הכל בפשטות, ענה על כל שאלה ונתן תחושת ביטחון מלאה. הפך תהליך לא פשוט לחוויה רגועה — ממליצה מכל הלב!"},{name:"מירה סבן",av:"https://lh3.googleusercontent.com/a/ACg8ocK8W4Fcq-lqdnatoCvOkeqsIO_J7o1lvXKbF2UnZpZAJfJBSA=s120-c-rp-mo-br100",rating:5,date:"לפני 11 חודשים",text:"זמין כל הזמן, שלח בשמחה כל מסמך שביקשנו, הסביר בקלות כל תהליך ועדכן בכל פעולה. רמת שירות ומקצועיות ברמה גבוהה. המלצתי ואמשיך להמליץ. תודה רבה!"},{name:"boris kofman",av:"https://lh3.googleusercontent.com/a/ACg8ocLxtHylYuSKPof0ec2gdJS9-22f6PJoysBdsNz92tZc7WKcEA=s120-c-rp-mo-br100",rating:5,date:"לפני 8 חודשים",text:"קודם כול בן אדם. אחר כך עו\"ד מקצוען. עזר לנו במכירה וקניית דירה, זמין לכל בעיה ולכל שאלה. מומלץ מאוד מאוד!"},{name:"אור סבן",av:"https://lh3.googleusercontent.com/a/ACg8ocKrygkpuEM24eiSMvN_ctMzxt1doLVN3n0iwTmlC0A-diXC4w=s120-c-rp-mo-br100",rating:5,date:"לפני 11 חודשים",text:"עורך דין ברמה — ליווה אותנו מהרגע הראשון, גילה הבנה רבה וסבלנות, מדבר בגובה עיניים. מהיר, יסודי ואמין, זמין בכל שעות היום! ממליצה בחום!!"},{name:"מיכל חלק",av:"https://lh3.googleusercontent.com/a-/ALV-UjXcSyig46jTpSppDNix_RY2proY9XWMefpcIY6-TUwW_5Ehpz8c=s120-c-rp-mo-ba2-br100",rating:5,date:"לפני 2 שנים",text:"הגעתי בעקבות המלצה ובהחלט אמליץ לכל מכריי. ליווה אותי בתהליך רכישת הדירה, ענה על כל שאלות עם הסברים והכוונה בסבלנות. הפך תהליך מלחיץ לרגוע! ראוי להערכה על המקצועיות, הסבלנות והחיוך."}];
+
+/* GOOGLE REVIEWS - SerpAPI */
+const SERP_KEY = '15d2a55c551c967c6ff5e8fcd15f1325a72854e0e55fcb484f59ffde3c1f8ad8';
+const SERP_DATA_ID = '0x678d267f12c9559:0xce676e8f96891c52';
+
+function S(r){return Array.from({length:5},(_,i)=>'<svg viewBox="0 0 24 24" style="width:12px;height:12px"><path fill="'+(i<r?'#f5c518':'#dde0e6')+'" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>').join('');}
+
+function renderReviews(rv, rating, total) {
+  const el = document.getElementById('reviewsContent');
+  if (!el) return;
+  let h = '<div class="rv-header"><div><div class="rv-big">' + rating.toFixed(1) + '</div>';
+  h += '<div class="rv-stars">' + S(Math.round(rating)) + '</div>';
+  h += '<div class="rv-cnt">' + total + ' ביקורות</div>';
+  h += '<div class="rv-g-tag"><svg width="12" height="12" viewBox="0 0 48 48"><path d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 2.9l5.7-5.7C34.3 6.5 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z" fill="#FFC107"/><path d="M6.3 14.7l6.6 4.8C14.5 16 19 12 24 12c3.1 0 5.8 1.1 7.9 2.9l5.7-5.7C34.3 6.5 29.4 4 24 4 16.3 4 9.7 8.5 6.3 14.7z" fill="#FF3D00"/><path d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.3C29.3 35.3 26.8 36 24 36c-5.3 0-9.7-3.3-11.3-8H6.4C9.7 35.5 16.3 44 24 44z" fill="#4CAF50"/><path d="M43.6 20.5H42V20H24v8h11.3c-.9 2.5-2.5 4.7-4.6 6.2l6.2 5.3C41.5 36.3 44 30.6 44 24c0-1.2-.1-2.4-.4-3.5z" fill="#1976D2"/></svg>Google Reviews</div></div></div>';
+  rv.forEach(r => {
+    const init = r.name?.[0] || '?';
+    h += '<div class="rv-item"><div class="rv-top">';
+    h += '<div class="rv-av">' + (r.av ? '<img src="' + r.av + '" alt="">' : init) + '</div>';
+    h += '<div><div class="rv-nm">' + r.name + '</div><div class="rv-dt">' + r.date + '</div></div></div>';
+    h += '<div class="rv-s">' + S(r.rating) + '</div>';
+    h += '<div class="rv-txt">' + r.text + '</div></div>';
+  });
+  h += '<a href="https://www.google.com/search?q=%D7%A2%D7%95%D7%A8%D7%9A+%D7%93%D7%99%D7%9F+%D7%99%D7%A6%D7%97%D7%A7+%D7%9B%D7%94%D7%9F&zx=1775169662754#" target="_blank" class="rv-add"><svg width="13" height="13" viewBox="0 0 24 24"><path fill="#1a73e8" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>כתוב ביקורת בגוגל</a>';
+  el.innerHTML = h;
+}
+
+async function fetchLiveReviews() {
+  try {
+    const url = 'https://serpapi.com/search.json?engine=google_maps_reviews&data_id=' + encodeURIComponent(SERP_DATA_ID) + '&hl=iw&api_key=' + SERP_KEY;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.reviews && data.reviews.length > 0) {
+      const rv = data.reviews.map(r => ({name:r.user?.name||'',av:r.user?.thumbnail||'',rating:r.rating,date:r.date||'',text:(r.snippet||'').replace(/\n/g,' ')}));
+      localStorage.setItem('serp_rv', JSON.stringify({rv, ts:Date.now()}));
+      renderReviews(rv, 5, 21);
+    }
+  } catch(e) { console.log('SerpAPI:', e.message); }
+}
+
+(function initReviews(){
+  try {
+    const c = localStorage.getItem('serp_rv');
+    if (c) {
+      const d = JSON.parse(c);
+      renderReviews(d.rv, 5, 21);
+      if (Date.now() - d.ts > 21600000) fetchLiveReviews();
+      return;
+    }
+  } catch(e) {}
+  renderReviews(RV, 5, 21);
+  fetchLiveReviews();
+})();
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  setTimeout(()=>t.classList.remove('on'), 2800);
+}
+</script>
+
+<!-- ═══════════════════════════════════════════
+     ADMIN PANEL  (hidden, triggered by footer)
+     ═══════════════════════════════════════════ -->
+<style>
+/* ── Admin overlay ── */
+#adm-overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9000;display:none;align-items:center;justify-content:center;padding:16px;}
+#adm-overlay.open{display:flex;}
+#adm-box{background:#111827;color:#e5e7eb;font-family:'Heebo',sans-serif;width:100%;max-width:440px;max-height:90vh;overflow-y:auto;border-radius:18px;border:1px solid rgba(255,255,255,.1);}
+#adm-login{padding:32px 28px;text-align:center;}
+#adm-login h2{font-size:20px;font-weight:800;margin-bottom:4px;}
+#adm-login p{font-size:12px;color:#9ca3af;margin-bottom:24px;}
+.adm-pw{width:100%;background:#1f2937;border:1.5px solid #374151;color:#e5e7eb;padding:12px 16px;border-radius:12px;font-family:'Heebo',sans-serif;font-size:15px;outline:none;text-align:center;letter-spacing:3px;margin-bottom:10px;direction:ltr;}
+.adm-pw:focus{border-color:#3b82f6;}
+.adm-pw-err{color:#ef4444;font-size:12px;display:none;margin-bottom:10px;}
+.adm-login-btn{width:100%;background:#3b82f6;color:#fff;border:none;border-radius:12px;padding:13px;font-family:'Heebo',sans-serif;font-weight:700;font-size:14px;cursor:pointer;transition:all .2s;}
+.adm-login-btn:hover{background:#2563eb;}
+/* ── Admin main ── */
+#adm-main{display:none;}
+.adm-header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px 14px;border-bottom:1px solid #1f2937;position:sticky;top:0;background:#111827;z-index:1;}
+.adm-header h3{font-size:15px;font-weight:800;color:#f9fafb;}
+.adm-close-btn{width:30px;height:30px;border-radius:50%;background:#1f2937;border:none;color:#9ca3af;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.adm-close-btn:hover{background:#374151;color:#fff;}
+/* tabs */
+.adm-tabs{display:flex;overflow-x:auto;border-bottom:1px solid #1f2937;padding:0 8px;}
+.adm-tabs::-webkit-scrollbar{height:0;}
+.adm-tab{padding:10px 16px;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#6b7280;border:none;background:none;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:'Heebo',sans-serif;transition:all .2s;}
+.adm-tab.on{color:#3b82f6;border-bottom-color:#3b82f6;}
+.adm-body{padding:20px 22px 28px;}
+.adm-panel{display:none;}
+.adm-panel.on{display:block;}
+/* fields */
+.afl{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#60a5fa;margin-bottom:5px;display:block;}
+.afi{width:100%;background:#1f2937;border:1.5px solid #374151;color:#e5e7eb;padding:10px 13px;border-radius:10px;font-family:'Heebo',sans-serif;font-size:13px;outline:none;margin-bottom:14px;transition:border-color .2s;}
+.afi:focus{border-color:#3b82f6;}
+textarea.afi{height:72px;resize:none;}
+.afrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+/* buttons */
+.adm-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:10px;font-family:'Heebo',sans-serif;font-size:12px;font-weight:700;cursor:pointer;border:none;transition:all .2s;}
+.adm-btn.blue{background:#3b82f6;color:#fff;}
+.adm-btn.blue:hover{background:#2563eb;}
+.adm-btn.green{background:rgba(34,197,94,.15);color:#22c55e;border:1px solid rgba(34,197,94,.2);}
+.adm-btn.green:hover{background:rgba(34,197,94,.25);}
+.adm-btn.red{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.2);}
+/* toggle */
+.adm-tgl-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.adm-tgl-row:last-child{border-bottom:none;}
+.adm-tgl-row label{font-size:13px;}
+.adm-tgl{width:42px;height:23px;background:#374151;border-radius:12px;cursor:pointer;position:relative;transition:background .25s;flex-shrink:0;}
+.adm-tgl.on{background:#3b82f6;}
+.adm-tgl::after{content:'';position:absolute;width:17px;height:17px;background:#fff;border-radius:50%;top:3px;right:3px;transition:transform .25s;}
+.adm-tgl.on::after{transform:translateX(-19px);}
+/* review list */
+.adm-rv-item{background:#1f2937;border-radius:10px;padding:14px;margin-bottom:10px;display:flex;gap:10px;}
+.adm-rv-av{width:36px;height:36px;border-radius:50%;overflow:hidden;flex-shrink:0;background:#374151;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;}
+.adm-rv-av img{width:100%;height:100%;object-fit:cover;}
+.adm-rv-body{flex:1;min-width:0;}
+.adm-rv-name{font-size:13px;font-weight:700;margin-bottom:2px;}
+.adm-rv-stars{color:#f5c518;font-size:11px;margin-bottom:4px;}
+.adm-rv-text{font-size:11px;color:#9ca3af;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.adm-rv-del{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.2);color:#ef4444;border-radius:8px;padding:4px 8px;font-size:10px;cursor:pointer;flex-shrink:0;font-family:'Heebo',sans-serif;font-weight:700;align-self:flex-start;}
+/* section title */
+.adm-sec{font-size:12px;font-weight:700;color:#f9fafb;margin:20px 0 12px;padding-bottom:8px;border-bottom:1px solid #1f2937;}
+.adm-sec:first-child{margin-top:0;}
+/* color row */
+.adm-color-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.adm-color-row label{font-size:13px;}
+.adm-color-sw{width:36px;height:28px;border-radius:8px;overflow:hidden;border:1px solid #374151;cursor:pointer;}
+.adm-color-sw input[type=color]{width:50px;height:40px;border:none;cursor:pointer;transform:translate(-7px,-6px);}
+/* toast */
+#adm-toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(40px);background:#1e293b;color:#e5e7eb;border:1px solid #334155;border-right:3px solid #3b82f6;padding:10px 20px;border-radius:20px;font-size:12px;font-weight:600;z-index:9999;opacity:0;transition:all .3s;white-space:nowrap;pointer-events:none;}
+#adm-toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
+</style>
+
+<!-- Admin Overlay -->
+<div id="adm-overlay">
+  <!-- Login -->
+  <div id="adm-login-wrap" style="width:100%;max-width:340px;">
+    <div style="text-align:center;margin-bottom:20px;">
+      <div style="width:52px;height:52px;border-radius:14px;background:#1e3a5f;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:24px;">🔐</div>
+      <div style="font-size:18px;font-weight:800;color:#f9fafb;font-family:'Heebo',sans-serif;">ממשק ניהול</div>
+      <div style="font-size:12px;color:#6b7280;margin-top:4px;font-family:'Heebo',sans-serif;">עו"ד יצחק כהן</div>
+    </div>
+    <input type="password" class="adm-pw" id="admPw" placeholder="••••••" onkeydown="if(event.key==='Enter')admLogin()">
+    <div class="adm-pw-err" id="admErr">❌ סיסמה שגויה</div>
+    <button class="adm-login-btn" onclick="admLogin()">כניסה →</button>
+    <button onclick="closeAdm()" style="width:100%;background:none;border:none;color:#6b7280;font-family:'Heebo',sans-serif;font-size:12px;cursor:pointer;margin-top:10px;padding:6px;">ביטול</button>
+  </div>
+
+  <!-- Main panel -->
+  <div id="adm-box" style="display:none;">
+    <div class="adm-header">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:16px;">⚙️</span>
+        <h3>ממשק ניהול</h3>
+      </div>
+      <button class="adm-close-btn" onclick="closeAdm()">✕</button>
+    </div>
+
+    <div class="adm-tabs">
+      <button class="adm-tab on" onclick="admTab('info',this)">👤 פרטים</button>
+      <button class="adm-tab" onclick="admTab('contact',this)">📞 קשר</button>
+      <button class="adm-tab" onclick="admTab('wa',this)">💬 WhatsApp</button>
+      <button class="adm-tab" onclick="admTab('reviews',this)">⭐ ביקורות</button>
+      <button class="adm-tab" onclick="admTab('design',this)">🎨 עיצוב</button>
+      <button class="adm-tab" onclick="admTab('security',this)">🔒 אבטחה</button>
+    </div>
+
+    <div id="adm-main" class="adm-body">
+
+      <!-- INFO -->
+      <div class="adm-panel on" id="ap-info">
+        <div class="adm-sec">פרטי המשרד</div>
+        <label class="afl">שם מלא</label>
+        <input class="afi" id="ai-name" value="עו&quot;ד יצחק (איציק) כהן">
+        <label class="afl">כותרת</label>
+        <input class="afi" id="ai-title" value="עורך דין ונוטריון · חולון">
+        <label class="afl">סלוגן</label>
+        <input class="afi" id="ai-tagline" value="מכניס את הלב למקצוע">
+        <label class="afl">ציטוט אישי</label>
+        <textarea class="afi" id="ai-quote">המקצוע אינו תפקיד גרידא אלא שליחות להשגת שביעות רצון הלקוח</textarea>
+        <label class="afl">טקסט אודות</label>
+        <textarea class="afi" id="ai-about">משרד עורך הדין ונוטריון כהן יצחק הינו משרד בוטיק שצבר ניסיון ומוניטין רב בתחום המקרקעין על כל גווניו.</textarea>
+        <button class="adm-btn blue" onclick="saveInfo()">💾 שמור פרטים</button>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="adm-panel" id="ap-contact">
+        <div class="adm-sec">טלפונים</div>
+        <div class="afrow">
+          <div><label class="afl">נייד</label><input class="afi" id="ac-mob" value="0526768562"></div>
+          <div><label class="afl">משרד</label><input class="afi" id="ac-off" value="035755722"></div>
+        </div>
+        <label class="afl">WhatsApp (קוד מדינה)</label>
+        <input class="afi" id="ac-wa" value="972526768562">
+        <div class="adm-sec">דיגיטל</div>
+        <label class="afl">מייל</label>
+        <input class="afi" id="ac-email" value="itzik.cohen.law@gmail.com" type="email">
+        <label class="afl">קישור Facebook</label>
+        <input class="afi" id="ac-fb" value="https://www.facebook.com/profile.php?id=100095657407511">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;">
+          <button class="adm-btn blue" onclick="saveContact()">💾 שמור</button>
+          <button class="adm-btn green" onclick="testWA('כללי')">💬 בדוק WA</button>
+          <button class="adm-btn green" onclick="addContact()">👤 בדוק vCard</button>
+        </div>
+      </div>
+
+      <!-- WHATSAPP MESSAGES -->
+      <div class="adm-panel" id="ap-wa">
+        <div class="adm-sec">הודעות WhatsApp לכל שירות</div>
+        <label class="afl">כללי</label>
+        <textarea class="afi" id="aw-gen">שלום איציק, אשמח לקבל ייעוץ משפטי. האם תוכל לחזור אליי?</textarea>
+        <label class="afl">מקרקעין</label>
+        <textarea class="afi" id="aw-land">שלום איציק, אני מתעניין/ת בשירותי מקרקעין. האם תוכל לחזור אליי?</textarea>
+        <label class="afl">ירושה ומשפחה</label>
+        <textarea class="afi" id="aw-inh">שלום איציק, אני זקוק/ה לייעוץ בנושא ירושה / צוואה / הסכם ממון.</textarea>
+        <label class="afl">חברות</label>
+        <textarea class="afi" id="aw-co">שלום איציק, אני מעוניין/ת בהקמת חברה בע"מ.</textarea>
+        <label class="afl">נוטריון</label>
+        <textarea class="afi" id="aw-not">שלום איציק, אני זקוק/ה לשירות נוטריון.</textarea>
+        <label class="afl">תושבי חוץ (אנגלית)</label>
+        <textarea class="afi" id="aw-for">Hello Itzik, I am a foreign resident interested in purchasing real estate in Israel.</textarea>
+        <button class="adm-btn blue" onclick="saveWA()">💾 שמור הודעות</button>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="adm-panel" id="ap-reviews">
+        <div class="adm-sec">ביקורות גוגל — SerpAPI</div>
+        <div style="background:#172554;border:1px solid #1e40af;border-radius:10px;padding:12px;margin-bottom:14px;font-size:12px;color:#93c5fd;line-height:1.7;">
+          🔑 SerpAPI Key מוגדר ופעיל<br>
+          📍 data_id: 0x678d267f12c9559...<br>
+          ⭐ דירוג: 5.0 | 21 ביקורות
+        </div>
+        <div style="display:flex;gap:8px;margin-bottom:16px;">
+          <button class="adm-btn green" onclick="refreshReviews()">🔄 רענן ביקורות</button>
+          <button class="adm-btn red" onclick="clearReviewCache()">🗑 נקה cache</button>
+        </div>
+        <div class="adm-sec">ביקורות קיימות</div>
+        <div id="adm-rv-list"></div>
+        <div class="adm-sec">הוסף ביקורת ידנית</div>
+        <div class="afrow">
+          <div><label class="afl">שם</label><input class="afi" id="ar-name" placeholder="ישראל ישראלי"></div>
+          <div><label class="afl">תאריך</label><input class="afi" id="ar-date" placeholder="לפני חודש"></div>
+        </div>
+        <label class="afl">טקסט</label>
+        <textarea class="afi" id="ar-text" placeholder="כתוב את הביקורת..."></textarea>
+        <button class="adm-btn blue" onclick="addManualReview()">➕ הוסף</button>
+      </div>
+
+      <!-- DESIGN -->
+      <div class="adm-panel" id="ap-design">
+        <div class="adm-sec">צבעים</div>
+        <div class="adm-color-row">
+          <label>כחול ראשי</label>
+          <div class="adm-color-sw"><input type="color" value="#1a6bcc" id="dc-blue" oninput="document.documentElement.style.setProperty('--blue',this.value);document.documentElement.style.setProperty('--cyan',this.value)"></div>
+        </div>
+        <div class="adm-color-row">
+          <label>רקע</label>
+          <div class="adm-color-sw"><input type="color" value="#f0f4ff" id="dc-bg" oninput="document.documentElement.style.setProperty('--bg',this.value)"></div>
+        </div>
+        <div class="adm-sec" style="margin-top:20px;">אנימציות</div>
+        <div class="adm-tgl-row">
+          <label>גלילה חלקה (desktop)</label>
+          <div class="adm-tgl on" id="tgl-scroll" onclick="this.classList.toggle('on')"></div>
+        </div>
+        <div class="adm-tgl-row">
+          <label>כפתור WhatsApp צף</label>
+          <div class="adm-tgl on" onclick="this.classList.toggle('on');document.querySelector('.fab.f-wa').style.display=this.classList.contains('on')?'flex':'none'"></div>
+        </div>
+        <div class="adm-tgl-row">
+          <label>כפתור SMS צף</label>
+          <div class="adm-tgl on" onclick="this.classList.toggle('on');document.querySelector('.fab.f-sms').style.display=this.classList.contains('on')?'flex':'none'"></div>
+        </div>
+        <button class="adm-btn blue" style="margin-top:16px" onclick="admToast('✅ עיצוב נשמר!')">💾 שמור</button>
+      </div>
+
+      <!-- SECURITY -->
+      <div class="adm-panel" id="ap-security">
+        <div class="adm-sec">שינוי סיסמה</div>
+        <label class="afl">סיסמה נוכחית</label>
+        <input class="afi" type="password" id="sp-cur" placeholder="••••••">
+        <label class="afl">סיסמה חדשה</label>
+        <input class="afi" type="password" id="sp-new" placeholder="••••••">
+        <label class="afl">אימות</label>
+        <input class="afi" type="password" id="sp-rep" placeholder="••••••">
+        <button class="adm-btn blue" onclick="changePw()">🔐 עדכן סיסמה</button>
+        <div class="adm-sec" style="margin-top:20px;">יציאה</div>
+        <button class="adm-btn red" onclick="admLogout()">↩ צא מהניהול</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="adm-toast"></div>
+
+<script>
+/* ═══════════════════════════════════
+   ADMIN ENGINE
+   ═══════════════════════════════════ */
+let ADM_PW = localStorage.getItem('adm_pw') || 'cohen2025';
+
+// Open admin by clicking footer admin link 5 times fast OR ⚙ link
+document.querySelector('.footer-adm').addEventListener('click', function(e){
+  e.preventDefault();
+  document.getElementById('adm-overlay').classList.add('open');
+  document.getElementById('admPw').value = '';
+  document.getElementById('admErr').style.display = 'none';
+  // show login or main based on session
+  if (sessionStorage.getItem('adm_auth') === '1') showAdmMain();
+  else {
+    document.getElementById('adm-login-wrap').style.display = 'block';
+    document.getElementById('adm-box').style.display = 'none';
+    setTimeout(() => document.getElementById('admPw').focus(), 100);
+  }
+});
+
+function admLogin(){
+  const pw = document.getElementById('admPw').value;
+  if (pw === ADM_PW) {
+    sessionStorage.setItem('adm_auth','1');
+    showAdmMain();
+  } else {
+    const e = document.getElementById('admErr');
+    e.style.display = 'block';
+    document.getElementById('admPw').value = '';
+    setTimeout(() => e.style.display = 'none', 2500);
+  }
+}
+
+function showAdmMain(){
+  document.getElementById('adm-login-wrap').style.display = 'none';
+  document.getElementById('adm-box').style.display = 'block';
+  document.getElementById('adm-main').style.display = 'block';
+  loadAdmData();
+  renderAdmReviews();
+}
+
+function closeAdm(){
+  document.getElementById('adm-overlay').classList.remove('open');
+}
+
+function admLogout(){
+  sessionStorage.removeItem('adm_auth');
+  closeAdm();
+}
+
+document.getElementById('admPw').addEventListener('keydown', e => { if(e.key==='Enter') admLogin(); });
+document.getElementById('adm-overlay').addEventListener('click', function(e){ if(e.target===this) closeAdm(); });
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeAdm(); });
+
+/* TABS */
+function admTab(id, btn){
+  document.querySelectorAll('.adm-panel').forEach(p => p.classList.remove('on'));
+  document.querySelectorAll('.adm-tab').forEach(b => b.classList.remove('on'));
+  document.getElementById('ap-'+id).classList.add('on');
+  btn.classList.add('on');
+}
+
+/* LOAD SAVED DATA */
+function loadAdmData(){
+  const d = JSON.parse(localStorage.getItem('adm_data') || '{}');
+  if(d.name)    document.getElementById('ai-name').value    = d.name;
+  if(d.title)   document.getElementById('ai-title').value   = d.title;
+  if(d.tagline) document.getElementById('ai-tagline').value = d.tagline;
+  if(d.quote)   document.getElementById('ai-quote').value   = d.quote;
+  if(d.about)   document.getElementById('ai-about').value   = d.about;
+  if(d.mob)     document.getElementById('ac-mob').value     = d.mob;
+  if(d.off)     document.getElementById('ac-off').value     = d.off;
+  if(d.waNum)   document.getElementById('ac-wa').value      = d.waNum;
+  if(d.email)   document.getElementById('ac-email').value   = d.email;
+  if(d.fb)      document.getElementById('ac-fb').value      = d.fb;
+  if(d.waMsgs) {
+    const m = d.waMsgs;
+    if(m.gen)  document.getElementById('aw-gen').value  = m.gen;
+    if(m.land) document.getElementById('aw-land').value = m.land;
+    if(m.inh)  document.getElementById('aw-inh').value  = m.inh;
+    if(m.co)   document.getElementById('aw-co').value   = m.co;
+    if(m.not)  document.getElementById('aw-not').value  = m.not;
+    if(m.forr) document.getElementById('aw-for').value  = m.forr;
+  }
+}
+
+/* SAVE INFO */
+function saveInfo(){
+  const d = JSON.parse(localStorage.getItem('adm_data') || '{}');
+  d.name    = document.getElementById('ai-name').value;
+  d.title   = document.getElementById('ai-title').value;
+  d.tagline = document.getElementById('ai-tagline').value;
+  d.quote   = document.getElementById('ai-quote').value;
+  d.about   = document.getElementById('ai-about').value;
+  localStorage.setItem('adm_data', JSON.stringify(d));
+  // apply live
+  const n = document.querySelector('.hero-name');
+  const t = document.querySelector('.hero-title');
+  const m = document.querySelector('.hero-motto');
+  const q = document.querySelector('.ab-quote');
+  const ab = document.querySelector('.ab-txt');
+  if(n) n.textContent = d.name;
+  if(t) t.textContent = d.title;
+  if(m) m.textContent = d.tagline;
+  if(q) q.textContent = '"' + d.quote + '"';
+  if(ab) ab.textContent = d.about;
+  admToast('✅ פרטים עודכנו!');
+}
+
+/* SAVE CONTACT */
+function saveContact(){
+  const d = JSON.parse(localStorage.getItem('adm_data') || '{}');
+  d.mob   = document.getElementById('ac-mob').value;
+  d.off   = document.getElementById('ac-off').value;
+  d.waNum = document.getElementById('ac-wa').value;
+  d.email = document.getElementById('ac-email').value;
+  d.fb    = document.getElementById('ac-fb').value;
+  localStorage.setItem('adm_data', JSON.stringify(d));
+  // apply live — update all phone/email links
+  document.querySelectorAll('a[href^="tel:052"]').forEach(a => a.href = 'tel:' + d.mob);
+  document.querySelectorAll('a[href^="tel:035"]').forEach(a => a.href = 'tel:' + d.off);
+  document.querySelectorAll('a[href^="mailto:"]').forEach(a => a.href = 'mailto:' + d.email);
+  document.querySelectorAll('a[href*="facebook"]').forEach(a => a.href = d.fb);
+  document.querySelectorAll('a[href^="sms:"]').forEach(a => a.href = 'sms:' + d.mob);
+  admToast('✅ פרטי קשר עודכנו!');
+}
+
+/* SAVE WA MESSAGES */
+function saveWA(){
+  const d = JSON.parse(localStorage.getItem('adm_data') || '{}');
+  d.waMsgs = {
+    gen:  document.getElementById('aw-gen').value,
+    land: document.getElementById('aw-land').value,
+    inh:  document.getElementById('aw-inh').value,
+    co:   document.getElementById('aw-co').value,
+    not:  document.getElementById('aw-not').value,
+    forr: document.getElementById('aw-for').value,
+  };
+  localStorage.setItem('adm_data', JSON.stringify(d));
+  // update WA object live
+  const m = d.waMsgs;
+  if(typeof WA !== 'undefined'){
+    WA['כללי']      = m.gen;
+    WA['מקרקעין']   = m.land;
+    WA['ירושה']     = m.inh;
+    WA['חברות']     = m.co;
+    WA['נוטריון']   = m.not;
+    WA['תושבי חוץ'] = m.forr;
+  }
+  admToast('✅ הודעות WhatsApp נשמרו!');
+}
+
+/* REVIEWS */
+function renderAdmReviews(){
+  const list = document.getElementById('adm-rv-list');
+  if(!list) return;
+  const cached = localStorage.getItem('serp_rv');
+  let rvs = [];
+  if(cached){ try{ rvs = JSON.parse(cached).rv || []; }catch(e){} }
+  if(!rvs.length) rvs = (typeof RV !== 'undefined') ? RV : [];
+  list.innerHTML = rvs.map((r,i) =>
+    '<div class="adm-rv-item">' +
+      '<div class="adm-rv-av">' + (r.av ? '<img src="'+r.av+'" alt="">' : (r.name?.[0]||'?')) + '</div>' +
+      '<div class="adm-rv-body">' +
+        '<div class="adm-rv-name">' + r.name + ' · ' + r.date + '</div>' +
+        '<div class="adm-rv-stars">' + '★'.repeat(r.rating) + '</div>' +
+        '<div class="adm-rv-text">' + (r.text||'').substring(0,80) + '...</div>' +
+      '</div>' +
+      '<button class="adm-rv-del" onclick="delReview('+i+')">✕</button>' +
+    '</div>'
+  ).join('');
+}
+
+function delReview(i){
+  const cached = localStorage.getItem('serp_rv');
+  let rvs = [];
+  if(cached){ try{ const d=JSON.parse(cached); rvs=d.rv||[]; }catch(e){} }
+  if(!rvs.length && typeof RV !== 'undefined') rvs = [...RV];
+  rvs.splice(i,1);
+  localStorage.setItem('serp_rv', JSON.stringify({rv:rvs,ts:Date.now()}));
+  renderReviews(rvs,5,rvs.length);
+  renderAdmReviews();
+  admToast('🗑 ביקורת נמחקה');
+}
+
+function addManualReview(){
+  const name = document.getElementById('ar-name').value.trim();
+  const text = document.getElementById('ar-text').value.trim();
+  const date = document.getElementById('ar-date').value.trim() || 'לאחרונה';
+  if(!name||!text){ admToast('⚠ מלא שם וטקסט'); return; }
+  const cached = localStorage.getItem('serp_rv');
+  let rvs = [];
+  if(cached){ try{ rvs = JSON.parse(cached).rv||[]; }catch(e){} }
+  if(!rvs.length && typeof RV !== 'undefined') rvs = [...RV];
+  rvs.unshift({name, av:'', rating:5, date, text});
+  localStorage.setItem('serp_rv', JSON.stringify({rv:rvs,ts:Date.now()}));
+  renderReviews(rvs,5,rvs.length);
+  renderAdmReviews();
+  document.getElementById('ar-name').value='';
+  document.getElementById('ar-text').value='';
+  admToast('✅ ביקורת נוספה!');
+}
+
+async function refreshReviews(){
+  admToast('⏳ מרענן...');
+  await fetchLiveReviews();
+  renderAdmReviews();
+  admToast('✅ ביקורות רועננו!');
+}
+
+function clearReviewCache(){
+  localStorage.removeItem('serp_rv');
+  renderReviews(RV,5,21);
+  renderAdmReviews();
+  admToast('🗑 Cache נוקה — ביקורות סטטיות מוצגות');
+}
+
+/* SECURITY */
+function changePw(){
+  const cur = document.getElementById('sp-cur').value;
+  const nw  = document.getElementById('sp-new').value;
+  const rep = document.getElementById('sp-rep').value;
+  if(cur !== ADM_PW){ admToast('❌ סיסמה נוכחית שגויה'); return; }
+  if(nw.length < 4){  admToast('⚠ סיסמה קצרה מדי'); return; }
+  if(nw !== rep){     admToast('❌ הסיסמאות לא תואמות'); return; }
+  ADM_PW = nw;
+  localStorage.setItem('adm_pw', nw);
+  document.getElementById('sp-cur').value = '';
+  document.getElementById('sp-new').value = '';
+  document.getElementById('sp-rep').value = '';
+  admToast('✅ סיסמה עודכנה!');
+}
+
+/* TOAST */
+function admToast(msg){
+  const t = document.getElementById('adm-toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2800);
+}
+
+/* apply saved data on page load */
+(function applyAdmData(){
+  const d = JSON.parse(localStorage.getItem('adm_data')||'{}');
+  if(d.name){ const el=document.querySelector('.hero-name'); if(el) el.textContent=d.name; }
+  if(d.title){ const el=document.querySelector('.hero-title'); if(el) el.textContent=d.title; }
+  if(d.tagline){ const el=document.querySelector('.hero-motto'); if(el) el.textContent=d.tagline; }
+  if(d.quote){ const el=document.querySelector('.ab-quote'); if(el) el.textContent='"'+d.quote+'"'; }
+  if(d.about){ const el=document.querySelector('.ab-txt'); if(el) el.textContent=d.about; }
+  if(d.waNum) localStorage.setItem('wa_num', d.waNum);
+  if(d.waMsgs && typeof WA !== 'undefined'){
+    const m=d.waMsgs;
+    if(m.gen)  WA['כללי']=m.gen;
+    if(m.land) WA['מקרקעין']=m.land;
+    if(m.inh)  WA['ירושה']=m.inh;
+    if(m.co)   WA['חברות']=m.co;
+    if(m.not)  WA['נוטריון']=m.not;
+    if(m.forr) WA['תושבי חוץ']=m.forr;
+  }
+})();
+</script>
+
+</body>
+</html>
